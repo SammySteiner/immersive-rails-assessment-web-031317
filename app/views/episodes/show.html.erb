@@ -1,0 +1,10 @@
+Episode Show Page
+
+Episode:
+Number: <%= @episode.number %>
+Date: <%= @episode.date %>
+
+Guests:
+<% @appearances.each do |appearance| %>
+<li><%= appearance.guest.name %></li>
+<% end %>
